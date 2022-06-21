@@ -1,0 +1,13 @@
+<nav>
+    <h1><a href="/">Node Blog</a></h1>
+    <ul>
+        <li><a href="/">Anasayfa</a></li>
+        <li><a href="/about">Hakkımızda</a></li>
+        <% if(user) { %>
+            <li><a href="/logout">Logout</a></li>
+            <li><h3>Merhaba <%= user %></h3></li>
+        <% } else { %>
+        <li><a href="/login">Login</a></li>
+        <% } %>
+    </ul>
+</nav>
